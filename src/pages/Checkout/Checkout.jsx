@@ -8,7 +8,7 @@ const Checkout = () => {
     <div>
       <h2>Book service : {title} </h2>
       <form>
-      <div className="grid grid-cols-1 md: grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -18,7 +18,7 @@ const Checkout = () => {
                   placeholder="email"
                   className="input input-bordered"
                 />
-              </div>
+              </div>+
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Password</span>
