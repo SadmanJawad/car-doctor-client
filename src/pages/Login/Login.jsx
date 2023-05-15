@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import img from '../../assets/images/login/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
@@ -7,6 +7,10 @@ import { AuthContext } from '../../providers/AuthProvider';
 const Login = () => {
 
    const {signIn} = useContext(AuthContext)
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/';
+    
 
     const handleLogin = event => {
         event.preventDefault();

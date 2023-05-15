@@ -37,8 +37,7 @@ const BookingRow = ({ booking, handleDelete, handleBookingConfirm }) => {
       <th>
         {status === "confirm" ? (
           <span
-            className="font-bold text-primary
-            "
+            className="font-bold text-primary"
           >
             Confirmed
           </span>
